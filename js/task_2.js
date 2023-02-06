@@ -1,5 +1,5 @@
 // Task 2
-console.log('/////Task 2')
+console.log("/////Task 2");
 class User2 {
   #name;
   constructor(name, login, age) {
@@ -9,16 +9,15 @@ class User2 {
   }
   getName(isAdmin) {
     if (this.#name.length >= 1) {
-      return isAdmin ? this.#name: 'Permission denied';
-    }
-    else {
-      return isAdmin ? this.login : 'Permission denied';
+      return isAdmin ? this.#name : "Permission denied";
+    } else {
+      return isAdmin ? this.login : "Permission denied";
     }
   }
-};
+}
 
-let user21 = new User2('Mike', 'MK_18', 18);
-let user22 = new User2('', 'NRG', 22);
+let user21 = new User2("Mike", "MK_18", 18);
+let user22 = new User2("", "NRG", 22);
 
 console.log(user21.getName(false));
 console.log(user21.getName(true));
